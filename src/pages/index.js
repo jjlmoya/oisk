@@ -1,21 +1,32 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Logo from "../components/atoms/logo"
 import SEO from "../components/seo"
+import "./style.css"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+    <Layout>
+        <SEO title="Home"/>
+        <section class="l-grid-column--full
+                        l-flex l-flex--align-center l-flex--direction-column
+                        a-pad--top-40 l-column--1-1">
+            <div class="l-position">
+                <h1 class="a-text  a-text--m  og-banner-screen__claim a-text--center a-text--uppercase a-text--bold l-position--absolute">
+                    En 2 Pasos
+                </h1>
+                <Logo src={"logo.jpg"}/>
+            </div>
+        </section>
+        <section class="l-grid-column--full bs_step a-pad--x-40">
+            <picture class=" a-image-logo--content a-pad-0">
+                <img class="a-image a-image-logo--content__image a-mar-auto" src="/images/mv.jpg"/>
+            </picture>
+            <h2 class="a-text a-text--xl  a-text--bold a-text--m">Tu viaje en 2 pasos</h2>
+            <h3 class="a-text  a-text--secondary"> Motivo:</h3>
+            <div class="l-flex l-flex--justify-center a-pad l-flex--wrap bs_step_category"></div>
+        </section>
+    </Layout>
+);
 
-export default IndexPage
+export default IndexPage;
