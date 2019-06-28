@@ -1,5 +1,5 @@
 import React from "react"
-import getImage from "../../services/images.service";
+import getImage from "../services/images.service";
 
 
 const Image = ({src}) => {

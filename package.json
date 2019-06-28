@@ -2,7 +2,7 @@
   "name": "Oisk",
   "private": true,
   "description": "App Dynamic Searcher",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "jjlmoya",
   "dependencies": {
     "gatsby": "^2.10.4",

@@ -1,7 +1,5 @@
 import {useMemo} from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
-
 let getImage = (src) => {
     const data = useStaticQuery(graphql`
       query {

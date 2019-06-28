@@ -1,12 +1,12 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import Logo from "../components/atoms/logo"
-import SEO from "../components/seo"
-import "./style.css"
+import MainLayout from "../layout/main"
+import Logo from "../atoms/logo"
+import SEO from "../organisms/seo"
+import "../assets/style.css"
 
 const IndexPage = () => (
-    <Layout>
+    <MainLayout>
         <SEO title="Home"/>
         <section class="l-grid-column--full
                         l-flex l-flex--align-center l-flex--direction-column
@@ -26,7 +26,7 @@ const IndexPage = () => (
             <h3 class="a-text  a-text--secondary"> Motivo:</h3>
             <div class="l-flex l-flex--justify-center a-pad l-flex--wrap bs_step_category"></div>
         </section>
-    </Layout>
+    </MainLayout>
 );
 
 export default IndexPage;
