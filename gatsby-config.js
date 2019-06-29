@@ -21,6 +21,10 @@ module.exports = {
                 name: `Oisk`,
                 short_name: `Oisk`,
                 start_url: `/`,
+                background_color: "#6b37bf",
+                theme_color: "#6b37bf",
+                icon: "src/images/logo.jpg"
+
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality
