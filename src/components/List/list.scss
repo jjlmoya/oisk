@@ -1,0 +1,23 @@
+.list {
+  &--default {
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+  }
+  &__element {
+    padding: 10px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    color: #313131;
+    cursor: pointer;
+    img {
+      height: 100px;
+      width: 100px;
+      padding-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.breadcrumbs {
+  display: none;
+  &.is-active {
+    display: block;
+  }
+  &--default {
+
+  }
+}

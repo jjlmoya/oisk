@@ -1,44 +1,54 @@
 {
-  "name": "Oisk",
+  "name": "callandor",
+  "version": "0.1.0",
   "private": true,
-  "description": "App Dynamic Searcher",
-  "version": "1.0.0",
-  "author": "jjlmoya",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
   "dependencies": {
-    "gatsby": "^2.10.4",
-    "gatsby-image": "^2.2.3",
-    "gatsby-plugin-manifest": "^2.2.0",
-    "gatsby-plugin-offline": "^2.2.0",
-    "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-sharp": "^2.2.1",
-    "gatsby-source-filesystem": "^2.1.0",
-    "gatsby-transformer-sharp": "^2.2.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "core-js": "^2.6.5",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-meta": "^2.2.2",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-plugin-pwa": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
   },
-  "keywords": [
-    "gatsby",
-    "oisk"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

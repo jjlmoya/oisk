@@ -1,3 +1,20 @@
-.passanger {
-  &--
+.passenger {
+  min-width: 275px;
+  &--default {
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border-radius: 3px;
+    display: grid;
+  }
+  &__counter {
+    text-align: center;
+    padding: 10px;
+    font-weight: lighter;
+    text-decoration: underline;
+    color: #404040;
+    cursor: pointer;
+  }
 }
