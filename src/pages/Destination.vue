@@ -16,7 +16,7 @@
     import SeoService from '../services/seoService';
 
     export default {
-        name: 'destinoxs',
+        name: 'destino',
         components: {
             Layout,
             Slider

@@ -2,10 +2,10 @@
 
     <ul class="list list--default">
         <li v-for="type in travelTypes" class="list__element">
-            <a href="/destino">
-                <img v-bind:src=type.icon >
+            <router-link :to="'/destino?type=' + type.id+ '&adults=' + adults + '&child=' + child + '&babies='+babies">
+                <img v-bind:src=type.icon>
                 <h2>{{type.name}}</h2>
-            </a>
+            </router-link>
         </li>
     </ul>
 </template>
@@ -43,11 +43,21 @@
                 ],
                 doThings: () => {
                     console.log('doThings')
-                }
+                },
+
             }
         },
-        mounted() {
-
+        computed: {
+            adults() {
+                console.log(this.$route.query)
+                return this.$route.query.adults;
+            },
+            child() {
+                return this.$route.query.child
+            },
+            babies() {
+                return this.$route.query.babies
+            }
         }
     };
 </script>
