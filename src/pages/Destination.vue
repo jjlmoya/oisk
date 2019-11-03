@@ -1,9 +1,7 @@
 <template>
     <div>
         <Layout>
-            <Slider>
-                Destination
-            </Slider>
+            <Country />
         </Layout>
     </div>
 </template>
@@ -13,13 +11,15 @@
 
     import Layout from '@/layout/Default.vue';
     import Slider from '@/components/Slider/Default.vue';
+    import Country from '@/components/List/Country.vue';
     import SeoService from '../services/seoService';
 
     export default {
         name: 'destino',
         components: {
             Layout,
-            Slider
+            Slider,
+            Country
         },
         metaInfo() {
             let seoService = new SeoService({
